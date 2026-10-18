@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : sram_32_1024_wrapper
+Version: S-2021.06-SP4
+Date   : Sun Feb 25 04:40:21 2024
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+    sram_32_1024_freepdk45_TT_1p0V_25C_lib (File: /home/isa03_2023_2024/labs/lab3/ssram_wrapper/sram_32_1024_freepdk45/sram_32_1024_freepdk45_TT_1p0V_25C.db)
+
+Number of ports:                          204
+Number of nets:                           407
+Number of cells:                          253
+Number of combinational cells:            131
+Number of sequential cells:               116
+Number of macros/black boxes:               2
+Number of buf/inv:                        101
+Number of references:                      13
+
+Combinational area:                109.059999
+Buf/Inv area:                       74.745998
+Noncombinational area:             319.200010
+Macro/Black Box area:            99941.812500
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                100370.072509
+Total area:                 undefined
+1

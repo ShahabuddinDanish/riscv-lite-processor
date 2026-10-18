@@ -1,0 +1,30 @@
+
+main:     file format elf32-littleriscv
+
+
+Disassembly of section .data:
+
+10010000 <sS>:
+10010000:	0000                	unimp
+10010002:	0000                	unimp
+10010004:	fc00                	fsw	fs0,56(s0)
+10010006:	ffff                	0xffff
+10010008:	fe00                	fsw	fs0,56(a2)
+1001000a:	ffff                	0xffff
+1001000c:	ff00                	fsw	fs0,56(a4)
+1001000e:	ffff                	0xffff
+
+Disassembly of section .sdata:
+
+10010010 <Lo>:
+10010010:	0000000f          	fence	unknown,unknown
+10010014:	ffec                	fsw	fa1,124(a5)
+10010016:	ffff                	0xffff
+
+10010018 <Li>:
+10010018:	001f 0000 ff00      	0x1f
+
+Disassembly of section .bss:
+
+1001001c <sE>:
+	...

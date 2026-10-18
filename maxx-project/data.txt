@@ -1,0 +1,12 @@
+0000
+0000
+fc00
+ffff
+fe00
+ffff
+ff00
+ffff
+0000000f
+ffec
+ffff
+001f

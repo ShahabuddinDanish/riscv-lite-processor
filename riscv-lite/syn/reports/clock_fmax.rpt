@@ -1,0 +1,23 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating graph... (UID-83)
+Warning: Design 'riscv_top' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : riscv_top
+Version: S-2021.06-SP4
+Date   : Sat Feb 24 15:37:30 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+MY_CLK           1.56   {0 0.78}            d         {CLK}
+--------------------------------------------------------------------------------
+1

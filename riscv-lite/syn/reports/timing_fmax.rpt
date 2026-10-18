@@ -1,0 +1,101 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv_top
+Version: S-2021.06-SP4
+Date   : Sat Feb 24 15:39:19 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: id_ex_stage/forward_signal_reg_reg
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: ex_mem_stage/alu_result_reg/value_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_top          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex_stage/forward_signal_reg_reg/CK (DFFR_X1)         0.00 #     0.00 r
+  id_ex_stage/forward_signal_reg_reg/QN (DFFR_X1)         0.07       0.07 r
+  id_ex_stage/U41/ZN (INV_X1)                             0.03       0.09 f
+  id_ex_stage/ex_forward_signal (id_ex_pipeline_stage)
+                                                          0.00       0.09 f
+  ex_unit/forward_signal (execution_unit)                 0.00       0.09 f
+  ex_unit/fwd_unit/forward_signal (forwarding_unit)       0.00       0.09 f
+  ex_unit/fwd_unit/U4/Z (CLKBUF_X3)                       0.06       0.15 f
+  ex_unit/fwd_unit/U54/Z (MUX2_X1)                        0.07       0.23 r
+  ex_unit/fwd_unit/forwarded_operand1[5] (forwarding_unit)
+                                                          0.00       0.23 r
+  ex_unit/operand1_mux/in0[5] (mux2to1_3)                 0.00       0.23 r
+  ex_unit/operand1_mux/U5/Z (MUX2_X1)                     0.08       0.30 r
+  ex_unit/operand1_mux/out[5] (mux2to1_3)                 0.00       0.30 r
+  ex_unit/alu_unit/operand1[5] (alu)                      0.00       0.30 r
+  ex_unit/alu_unit/sub_26/A[5] (alu_DW01_sub_1)           0.00       0.30 r
+  ex_unit/alu_unit/sub_26/U515/ZN (NOR2_X1)               0.04       0.34 f
+  ex_unit/alu_unit/sub_26/U336/Z (BUF_X1)                 0.04       0.38 f
+  ex_unit/alu_unit/sub_26/U512/ZN (NOR2_X1)               0.05       0.43 r
+  ex_unit/alu_unit/sub_26/U463/ZN (NAND2_X1)              0.03       0.46 f
+  ex_unit/alu_unit/sub_26/U499/ZN (OAI21_X1)              0.05       0.52 r
+  ex_unit/alu_unit/sub_26/U342/ZN (AOI21_X1)              0.03       0.55 f
+  ex_unit/alu_unit/sub_26/U498/ZN (OAI21_X1)              0.05       0.59 r
+  ex_unit/alu_unit/sub_26/U341/ZN (AOI21_X1)              0.03       0.63 f
+  ex_unit/alu_unit/sub_26/U307/ZN (OAI21_X1)              0.06       0.68 r
+  ex_unit/alu_unit/sub_26/U333/ZN (AOI21_X1)              0.03       0.72 f
+  ex_unit/alu_unit/sub_26/U310/ZN (OAI21_X1)              0.05       0.76 r
+  ex_unit/alu_unit/sub_26/U309/ZN (INV_X1)                0.02       0.79 f
+  ex_unit/alu_unit/sub_26/U252/ZN (OAI21_X1)              0.05       0.84 r
+  ex_unit/alu_unit/sub_26/U306/ZN (INV_X1)                0.03       0.87 f
+  ex_unit/alu_unit/sub_26/U315/ZN (OAI21_X2)              0.06       0.93 r
+  ex_unit/alu_unit/sub_26/U312/ZN (NAND2_X1)              0.04       0.97 f
+  ex_unit/alu_unit/sub_26/U311/ZN (AOI21_X1)              0.05       1.01 r
+  ex_unit/alu_unit/sub_26/U5/CO (FA_X1)                   0.08       1.09 r
+  ex_unit/alu_unit/sub_26/U321/ZN (NAND2_X1)              0.04       1.13 f
+  ex_unit/alu_unit/sub_26/U324/ZN (NAND3_X1)              0.04       1.17 r
+  ex_unit/alu_unit/sub_26/U323/ZN (NAND2_X1)              0.03       1.20 f
+  ex_unit/alu_unit/sub_26/U317/ZN (NAND3_X1)              0.03       1.23 r
+  ex_unit/alu_unit/sub_26/U316/Z (XOR2_X1)                0.07       1.30 r
+  ex_unit/alu_unit/sub_26/DIFF[31] (alu_DW01_sub_1)       0.00       1.30 r
+  ex_unit/alu_unit/U126/ZN (INV_X1)                       0.02       1.32 f
+  ex_unit/alu_unit/U127/ZN (OAI22_X1)                     0.06       1.39 r
+  ex_unit/alu_unit/alu_result[31] (alu)                   0.00       1.39 r
+  ex_unit/alu_result[31] (execution_unit)                 0.00       1.39 r
+  ex_mem_stage/alu_result_ex[31] (ex_mem_pipeline_stage)
+                                                          0.00       1.39 r
+  ex_mem_stage/alu_result_reg/in[31] (register_32bit_5)
+                                                          0.00       1.39 r
+  ex_mem_stage/alu_result_reg/U2/Z (MUX2_X1)              0.05       1.44 r
+  ex_mem_stage/alu_result_reg/value_reg[31]/D (DFFR_X1)
+                                                          0.01       1.45 r
+  data arrival time                                                  1.45
+
+  clock MY_CLK (rise edge)                                1.56       1.56
+  clock network delay (ideal)                             0.00       1.56
+  clock uncertainty                                      -0.07       1.49
+  ex_mem_stage/alu_result_reg/value_reg[31]/CK (DFFR_X1)
+                                                          0.00       1.49 r
+  library setup time                                     -0.03       1.46
+  data required time                                                 1.46
+  --------------------------------------------------------------------------
+  data required time                                                 1.46
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

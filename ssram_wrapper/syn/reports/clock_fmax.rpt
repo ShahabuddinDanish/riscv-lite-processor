@@ -1,0 +1,22 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : clocks
+Design : sram_32_1024_wrapper
+Version: S-2021.06-SP4
+Date   : Sun Feb 25 04:40:10 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+MY_CLK           0.74   {0 0.37}            d         {CLK}
+--------------------------------------------------------------------------------
+1
